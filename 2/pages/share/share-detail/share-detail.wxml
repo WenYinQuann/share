@@ -1,0 +1,41 @@
+<view>
+  <image class='titleImage' src='/images/share/title.png'></image>
+  <view class='book'>
+    <image class='book-image' src='{{bookDetail.path}}'></image>
+    <text class='book-name'>{{bookDetail.bookName}}</text>
+    <text class='book-detail'>{{bookDetail.detail}}</text>
+  </view>
+  <view class='price'>
+    <view>
+      <text class='book-newPrice'>￥{{bookDetail.newPrice}}</text>
+      <text class='book-new'>{{bookDetail.describe}}</text>
+    </view>
+    <text class='book-oldPrice'>原价:￥{{bookDetail.oldPrice}}</text>
+  </view>
+  <view class='book-position'>
+    <text class='book-source'>出版社</text>
+    <text class='book-www'>{{bookDetail.publishers}}</text>
+  </view>
+  <view class='book-position'>
+    <text class='book-source'>发布时间</text>
+    <text class='book-www'>{{bookDetail.publishTime}}</text>
+  </view>
+  <view class='book-position'>
+    <text class='book-source'>书籍剩余数量</text>
+    <text class='book-www'>{{bookDetail.remainAmount}}</text>
+  </view>
+  <view class='book-buyer'>
+    <view class='buyOne'>
+      <text class='book-buyNumber'>购买数量</text>
+      <view class='buyNumbers'>
+        <text class='jian' catchtap='onJianTap'>-</text>
+        <text class='buy'>{{buyNumber}}</text>
+        <text class='jia' catchtap='onJiaTap'>+</text>
+      </view>
+    </view>
+    <view >
+      <text class='joinShare'>加入共享单</text>
+      <text class='immediateShare' catchtap='onShareTap'>立即共享</text>
+    </view>
+  </view>
+</view>

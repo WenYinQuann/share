@@ -1,0 +1,31 @@
+<view>
+  <view>
+    <text>收货人姓名</text>
+    <text>中山市</text>
+  </view>
+  <view>
+    <text>联系电话</text>
+    <text>12345678989</text>
+  </view>
+  <view>
+    <text>收货地址</text>
+    <text>梅园四栋</text>
+    <button>修改</button>
+  </view>
+  <view>
+    <view>
+      <text>共享清单</text>
+      <button>修改</button>
+    </view>
+    <view >
+      <image src=''></image>
+      <text></text>
+      <text></text>
+      <text></text>
+    </view>
+  </view>
+  <view>
+    <text>是否抵扣信用值</text>
+    <radio></radio>
+  </view>
+</view>

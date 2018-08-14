@@ -1,0 +1,24 @@
+<view>
+  <view class='title'>
+    <image class='image-title' src='/images/share/title.png'></image>
+  </view>
+   <view class="search"> 
+    <icon type="search" class="search-img" size="13" color="#405f80"></icon>
+    <input type="text" placeholder="搜索关键词" placeholder-class='placeholder' bindfocus="onBindFocus" bindconfirm="onBindConfirm" ></input>
+   </view>
+  <view class='tuijian'>
+    <text class='text-relative'>搜索结果</text>
+    <text class='text-more'>综合</text>
+    <text class='text-do'>按新旧</text>
+    <text class='text-do'>按价格</text>
+  </view>
+  <view class='tuijian-item' wx:for="{{tuijianmu}}">
+    <image class='tuijian-image' src='{{item.path}}'></image>
+    <text class='tuijian-text'>{{item.bookName}}</text>
+    <view>
+      <text class='tuijian-new'>￥{{item.newPrice}}</text>
+      <text class='tuijian-desc'>{{item.describe}}</text>
+    </view>
+    <text class='tuijian-old'>原价:￥{{item.oldPrice}}</text>
+  </view>
+</view>

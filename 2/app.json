@@ -1,0 +1,16 @@
+{
+  "pages":[
+    
+    "pages/share/share",
+    "pages/index/index",
+    "pages/share/share-search/share-search",
+    "pages/share/share-detail/share-detail",
+    "pages/share/share-buy/share-buy"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  }
+}

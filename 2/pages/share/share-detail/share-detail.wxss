@@ -1,0 +1,98 @@
+page{
+  background-color: #eee;
+}
+.titleImage{
+  width: 100%;
+  height: 450rpx;
+}
+.book{
+  display: flex;
+  width: 100%;
+  height: 450rpx;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 30rpx;
+}
+.book-image{
+  width: 230rpx;
+  height: 270rpx;
+  margin-bottom: 20rpx;
+}
+.book-name{
+  font-size: 40rpx;
+  color: #fff;
+  margin-bottom: 20rpx;
+}
+.book-detail{
+  font-size: 20rpx;
+  color: #fff;
+}
+.price{
+  width: 100%;
+  height: 120rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.book-newPrice{
+  font-size: 50rpx;
+   font-weight: bold;
+}
+.book-new{
+  margin-left: 20rpx;
+  font-size: 32rpx;
+}
+.book-oldPrice{
+  font-size: 20rpx;
+  text-decoration: line-through;
+}
+.book-position{
+  padding: 20rpx 20rpx 20rpx 20rpx;
+  border-bottom: 1px solid #000;
+  border-top: 1px solid #000;
+}
+.book-source{
+  font-size: 32rpx;
+  line-height: 2;
+}
+.book-www{
+  float: right; 
+  font-size: 32rpx;
+  line-height: 2;
+}
+.book-buyer{
+  margin-top: 20rpx;
+}
+.buyOne{
+  padding: 60rpx 0rpx;
+}
+.book-buyNumber{
+  margin-left: 160rpx;
+  font-size: 32rpx;
+  font-weight: bold;
+}
+.buyNumbers{
+  float: right;
+   margin-right: 160rpx;
+   display: flex;
+   flex-direction: row;
+}
+.jian{
+   margin-right: 20rpx;
+}
+.jia{
+  margin-left: 20rpx;
+}
+.joinShare{
+  border: 1px solid #000;
+  border-radius: 10%;
+  margin-left: 120rpx;
+  background-color: rgb(187, 145, 28);
+}
+.immediateShare{
+  margin-left: 150rpx;
+  border: 1px solid #000;
+  border-radius: 10%;
+  background-color: rgb(187, 145, 28);
+}

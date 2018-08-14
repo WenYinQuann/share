@@ -1,0 +1,33 @@
+<!--logs.wxml-->
+<view>
+  <view class='title'>
+    <image class='image-title' src='/images/share/title.png'></image>
+  </view>
+  <view class="search"> 
+    <icon type="search" class="search-img" size="13" color="#405f80"></icon>
+    <input type="text" placeholder="搜索关键词" placeholder-class='placeholder' bindfocus="onBindFocus" bindconfirm="onBindConfirm" ></input>
+   </view>
+  
+  <view class='mulu'>
+    <view class='classify-item' wx:for="{{classify}}">
+      <image class='image-item' src='/images/share/blue.png'></image>
+      <text class='text-item'>{{item.title}}</text>
+    </view>
+  </view>
+  <view class='tuijian'>
+    <image class='image-share' src='/images/share/share.png'></image>
+    <text class='text-relative'>相关推荐</text>
+    <text class='text-more'>更多</text>
+  </view>
+  <view class='tuijian-container'>
+    <view catchtap='onDetailTap' class='tuijian-item' wx:for="{{tuijianmu}}">
+      <image class='tuijian-image' src='{{item.path}}'></image>
+      <text class='tuijian-text'>{{item.bookName}}</text>
+      <view>
+        <text class='tuijian-new'>￥{{item.newPrice}}</text>
+        <text class='tuijian-desc'>{{item.describe}}</text>
+      </view>
+      <text class='tuijian-old'>原价:￥{{item.oldPrice}}</text>
+    </view>
+  </view>
+</view>
